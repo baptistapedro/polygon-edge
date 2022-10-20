@@ -34,8 +34,8 @@ func Fuzz(data []byte) int {
 	// NOTE: modify validatorsTest[0] for testing ecdsa
 	
 	switch typedVal := validator.(type) {
-	  case *validators.ECDSAValidator:
-		  typedVal.Address = types.BytesToAddress(data)
+	case *validators.ECDSAValidator:
+		typedVal.Address = types.BytesToAddress(data)
   	case *validators.BLSValidator:
 	  	ok := typedVal.SetFromBytes(data)
 	  	if ok != nil {return 1}
