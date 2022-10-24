@@ -1,4 +1,4 @@
-ROM ubuntu:20.04 as builder
+FROM ubuntu:20.04 as builder
 
 RUN ln -snf /usr/share/zoneinfo/$CONTAINER_TIMEZONE /etc/localtime && echo $CONTAINER_TIMEZONE > /etc/timezone
 
