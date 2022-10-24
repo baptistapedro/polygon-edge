@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# root path
 ROOT_PATH=$(pwd)
-# fuzzers binaries path
-#mkdir $(echo $(pwd)/bin_fuzz)
-#BIN_FUZZ=$(echo $(pwd)/bin_fuzz)
-#export GOROOT=/usr/local/go
+export GOROOT=/usr/local/go
 
 # Pkgs
 $GOROOT/bin/go install github.com/dvyukov/go-fuzz/go-fuzz@latest github.com/dvyukov/go-fuzz/go-fuzz-build@latest
