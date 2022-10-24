@@ -1,4 +1,4 @@
-package myfuzz
+package edgefuzz
 
 import (
 	"github.com/0xPolygon/polygon-edge/validators"
